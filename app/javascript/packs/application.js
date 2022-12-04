@@ -14,3 +14,11 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+require("../post")
+// ①-１作成したファイルを読み込むためには、application.jsで設定を行う必要があり, requireを用いて読み込む。
+// app/javascript/post.js
+
+require("../count")
+// ②-１作成したファイルを読み込むためには、application.jsで設定を行う必要があり、requireを用いて読み込む。
+

@@ -8,9 +8,13 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    # ①−３ binding.pry で動作確認。
     article = Article.new(article_params)
     if article.save
-      redirect_to index 
+      
+      render json: {article: article} 
+
+      # redirect_to index 
     end
   end
 
